@@ -1,0 +1,19 @@
+{
+  "name": "dayi-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dayi Bot Team",
+  "license": "ISC",
+  "dependencies": {
+    "aliases": "^1.0.0",
+    "chalk": "^2.4.1",
+    "discord.js": "^11.3.2",
+    "http2": "^3.3.7",
+    "moment": "^2.22.2",
+    "snekfetch": "^4.0.4"
+  }
+}
