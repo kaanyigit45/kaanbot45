@@ -4,6 +4,10 @@ const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
 const fs = require('fs');
 const moment = require('moment');
+const YouTube = require('simple-youtube-api');
+const ytdl = require('ytdl-core');
+const youtube = new YouTube('AIzaSyCO5YZJdRx0V9wk5Hn1JxGn3jG-C2SWD84');
+const queue = new Map();
 require('./util/eventLoader')(client);
 
 var prefix = ayarlar.prefix;
@@ -190,11 +194,6 @@ client.on('warn', e => {
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
-
-const YouTube = require('simple-youtube-api');
-const ytdl = require('ytdl-core');
-const youtube = new YouTube('AIzaSyCO5YZJdRx0V9wk5Hn1JxGn3jG-C2SWD84');
-const queue = new Map();
 
 var servers = {};
 var prefix = 'm.';
